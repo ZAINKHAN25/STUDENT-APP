@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENTES APP</title>
+  <title>Students App</title>
 </head>
+<style>
+  body {
+    background-color: #D8EAE7;
+    overflow: hidden;
+  }
+
+  .gradient-text {
+    text-align: center;
+    text-shadow: 8px 5px 16px 0px rgba(0, 0, 0, 0.53);
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-image: linear-gradient(to bottom, #0680C5, #06C5C5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .containerone {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  .rectangle2 {
+    overflow-x: hidden;
+    width: 90vw;
+    height: 50vh;
+    background: white;
+    box-shadow: 5px 3px 10px 6px rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+    padding: 30px 10px;
+  }
+
+  .studentinfodiv{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #E3E1E1;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: start;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 35%);
+    transition: all .4s ease;
+  }
+  .studentinfodiv:hover{
+    margin-top: -15px;
+    margin-bottom: 25px;
+    /* border: 3px solid white; */
+  }
+  
+  .studnamediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .studnamediv h3{
+    color: #31BECC;
+font-size: 1.3rem;
+font-family: Inter;
+font-weight: bolder;
+word-wrap: break-word;
+margin: 3px;
+padding: 2px;
+border-bottom: 1px solid black;
+  }
+  .studnamediv span{
+    padding-right: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span{
+    color: #31BECC;
+    font-weight: bold;
+  }
+
+</style>
+
 <body>
-    
+  <div class="containerone">
+    <h1 class="gradient-text">STUDENTS APP</h1>
+    <input class="form-control" style="padding: 10px; width: 90vw;" list="datalistOptions" id="exampleDataList"
+      placeholder="SEARCH A NAME HERE">
+    <datalist id="datalistOptions">
+      <option value="San Francisco">
+      <option value="New York">
+      <option value="Seattle">
+      <option value="Los Angeles">
+      <option value="Chicago">
+    </datalist>
+    <div class="rectangle2">
+
+      
+      <!-- <div class="studentinfodiv">
+        <img src="./student dummy.png">
+        <div class="studnamediv">
+          <h3>MUHAMMAD ZAIN-UL-ARFEEN</h3>
+          <span>
+            <span>MUHAMMAD ZAIN-UL-ARFEEN</span>
+            <span>CLASS 8th</span>
+          </span>
+        </div>
+      </div> -->
+
+
+    </div>
+  </div>
+
+
+  <script type="module" src="script.js"></script>
 </body>
+
 </html>

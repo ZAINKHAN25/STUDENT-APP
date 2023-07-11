@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js';
-import { getFirestore, collection, addDoc  } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js';
+import { getFirestore, collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js';
 
 
 const firebaseConfig = {
@@ -15,4 +15,4 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 
-export {app, db, collection, addDoc};
+export {app, db, collection, addDoc, getDocs };
